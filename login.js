@@ -22,7 +22,7 @@ login.onclick = ()=>{
       {
         if ((input[0].value != sessionStorage.getItem('username')) )
         {
-          input[0].nextElementSibling.innerHTML = <p class="text-danger">Username or Password is incorrect</p>;
+          input[0].nextElementSibling.innerHTML = `<p class="text-danger">Username or Password is incorrect</p>`;
         setTimeout(()=>{
           input[0].nextElementSibling.textContent = "";
         }, 2000);
@@ -30,7 +30,7 @@ login.onclick = ()=>{
         }
         if ((input[1].value != sessionStorage.getItem('password')) )
         {
-          input[1].nextElementSibling.innerHTML = <p class="text-danger">Username or Password is incorrect</p>;
+          input[1].nextElementSibling.innerHTML = `<p class="text-danger">Username or Password is incorrect</p>`;
         setTimeout(()=>{
           input[1].nextElementSibling.textContent = "";
         }, 2000);
@@ -44,14 +44,14 @@ login.onclick = ()=>{
    {
     if (input[0].value == "")
     {
-      input[0].nextElementSibling.innerHTML = <p class="text-danger">Username is empty</p>;
+      input[0].nextElementSibling.innerHTML = `<p class="text-danger">Username is empty</p>`;
       setTimeout(()=>{
         input[0].nextElementSibling.textContent = "";
       }, 2000);
     }
     if (input[1].value == "")
     {
-      input[1].nextElementSibling.innerHTML = <p class="text-danger">Pasword is empty</p>;
+      input[1].nextElementSibling.innerHTML = `<p class="text-danger">Pasword is empty</p>`;
       setTimeout(()=>{
         input[1].nextElementSibling.textContent = "";
       }, 2000);
